@@ -1,2 +1,4 @@
 # Etsy-Fee-Calculator
- 1 hour project for calculating fees on Etsy
+1 Image, 1 Script, 1 icon
+
+This was a fast project constructed in an hour designed to help with the pricing of items as a seller in Etsy.com
