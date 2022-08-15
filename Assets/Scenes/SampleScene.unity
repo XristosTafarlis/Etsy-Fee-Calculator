@@ -158,8 +158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 0}
-  m_SizeDelta: {x: 566.54, y: 297.08997}
+  m_AnchoredPosition: {x: 15, y: -10}
+  m_SizeDelta: {x: 566.54, y: 357.38}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &30402420
 MonoBehaviour:
@@ -198,7 +198,7 @@ MonoBehaviour:
     Listing fee\t\t\t\t\t\t\t24% of \"Listing fee\" (0.05\u20AC)\r\r\nProcessing
     fee\t\t\t\t\t\t\t4% + 0.30\u20AC\r\nVAT: Processing Fee\t\t\t\t\t24% of \"Processing
     fee\"\r\nTransaction fee\t\t\t\t\t\t\t6.5%\r\r\nVAT: Transaction\t\t\t\t\t\t24%
-    of \"Transaction fee\""
+    of \"Transaction fee\"\nTransportation\t\t\t\t\t\t\t30\u20AC\nIRS taxes\t\t\t\t\t\t\t\t\t\t24%"
 --- !u!222 &30402421
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -290,13 +290,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 145455061}
   m_TextComponent: {fileID: 1339768705}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 3
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 2
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 2
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnSubmit:
     m_PersistentCalls:
@@ -668,7 +668,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Enter sell price
+  m_Text: The amount you want
 --- !u!222 &800148179
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -895,10 +895,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Add the amount you want after the Etsy
+  m_Text: 'Add the final amount you want to
 
-    fees, use comma (,) for precise
-    numbers'
+    keep after all the deductions of
+    Etsy'
 --- !u!222 &1313565282
 CanvasRenderer:
   m_ObjectHideFlags: 0
