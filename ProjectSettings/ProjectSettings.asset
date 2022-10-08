@@ -12,19 +12,19 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Tziatzias
+  companyName: Xristos Tafarlis
   productName: EtsyCalculator
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.103773594, g: 0.103773594, b: 0.103773594, a: 1}
+  m_SplashScreenBackgroundColor: {r: 1, g: 1, b: 1, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
-  m_SplashScreenOverlayOpacity: 1
-  m_SplashScreenAnimation: 1
+  m_SplashScreenOverlayOpacity: 0.5
+  m_SplashScreenAnimation: 2
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 0
-  m_SplashScreenBackgroundAnimationZoom: 1
-  m_SplashScreenLogoAnimationZoom: 0
+  m_SplashScreenDrawMode: 1
+  m_SplashScreenBackgroundAnimationZoom: 0
+  m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
   m_SplashScreenBackgroundPortraitAspect: 1
   m_SplashScreenBackgroundLandscapeUvs:
@@ -39,13 +39,17 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
+  m_SplashScreenLogos:
+  - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
+    duration: 2
+  - logo: {fileID: 21300000, guid: 0f278c5f9b8a96149828c1436a3d9148, type: 3}
+    duration: 2
   m_VirtualRealitySplashScreen: {fileID: 2800000, guid: 9fd33b7bae065ee4aaec2a702f6c3b34, type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1280
   defaultScreenHeight: 720
-  defaultScreenWidthWeb: 800
-  defaultScreenHeightWeb: 600
+  defaultScreenWidthWeb: 1280
+  defaultScreenHeightWeb: 720
   m_StereoRenderingPath: 0
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -559,9 +563,9 @@ PlayerSettings:
   ps4IncludedModules: []
   ps4attribVROutputEnabled: 0
   monoEnv: 
-  splashScreenBackgroundSourceLandscape: {fileID: 0}
+  splashScreenBackgroundSourceLandscape: {fileID: 21300000, guid: 9fd33b7bae065ee4aaec2a702f6c3b34, type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
-  blurSplashScreenBackground: 1
+  blurSplashScreenBackground: 0
   spritePackerPolicy: 
   webGLMemorySize: 32
   webGLExceptionSupport: 1
@@ -578,7 +582,8 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Server: Transport;Price;Selector;DD
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
