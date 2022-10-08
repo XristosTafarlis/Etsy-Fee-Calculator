@@ -682,8 +682,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 452.99997, y: -202}
-  m_SizeDelta: {x: -520, y: -562.99994}
+  m_AnchoredPosition: {x: 458, y: -192.75}
+  m_SizeDelta: {x: -980, y: -664.50006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &293328283
 MonoBehaviour:
@@ -926,8 +926,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 452.99997, y: 251}
-  m_SizeDelta: {x: -520, y: -562.99994}
+  m_AnchoredPosition: {x: 458, y: 259.25}
+  m_SizeDelta: {x: -980, y: -666.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &800148178
 MonoBehaviour:
@@ -1419,8 +1419,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 92, y: 207.5}
-  m_SizeDelta: {x: -520, y: -562.99994}
+  m_AnchoredPosition: {x: 142.63, y: 207.5}
+  m_SizeDelta: {x: -949.27, y: -670}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1313565281
 MonoBehaviour:
@@ -1455,10 +1455,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Add the final amount you want to
+  m_Text: 'Add the final amount you want
 
-    keep after all the deductions of
-    Etsy'
+    to keep after all the deductions'
 --- !u!222 &1313565282
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1681,8 +1680,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: -20, y: -13}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0.000011444092}
+  m_SizeDelta: {x: 0.000030518, y: -0.0000076294}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1340413492
 GameObject:
@@ -1891,7 +1890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.71392024, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
