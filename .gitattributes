@@ -1,4 +1,4 @@
-Assets/TextMeshPro/*.* linguist-detectable=false
+Assets/TextMesh Pro/*.* linguist-detectable=false
 Build/* linguist-detectable=false
 *.js linguist-detectable=false
 *.css linguist-detectable=false
