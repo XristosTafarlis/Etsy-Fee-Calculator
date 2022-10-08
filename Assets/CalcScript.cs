@@ -1,24 +1,23 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CalcScript : MonoBehaviour{
-	[SerializeField] GameObject inputField;
-	[SerializeField] GameObject textDisplay;
-	
-	int temp;
 
+public class CalcScript : MonoBehaviour{
+	[SerializeField] Text inputField;
+	[SerializeField] Text textDisplay;
+	[SerializeField] Dropdown transportPriceSelector;
+	
+	int number;
+	
 	void Update(){
-		int number;
-		bool sucsess = int.TryParse(inputField.GetComponent<Text>().text, out number);
+		bool sucsess = int.TryParse(inputField.text, out number);
 		
 		if(sucsess){
-			temp = number;
+			textDisplay.text = (transportPriceSelector.value == 0)? ((1.58781 * number) + 32.4405).ToString("F2") : ((1.58781 * number) + 47.4405).ToString("F2");
 		}
 		
-		if(temp > 0){
-			textDisplay.GetComponent<Text>().text = ((1.58781 * temp) + 47.4405).ToString("F2");
-		}else{
-			textDisplay.GetComponent<Text>().text = "NaN";
+		if( string.IsNullOrEmpty(inputField.text)){
+			textDisplay.text = "NaN";
 		}
 	}
 }
