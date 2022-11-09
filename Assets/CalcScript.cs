@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class CalcScript : MonoBehaviour{
 	[SerializeField] Text inputField;
 	[SerializeField] Text textDisplay;
-	[SerializeField] Dropdown transportPriceSelector;
+	[SerializeField] Slider transportSlider;
+	[SerializeField] Text transportSliderText;
 	
 	int number;
 	
@@ -13,11 +13,17 @@ public class CalcScript : MonoBehaviour{
 		bool sucsess = int.TryParse(inputField.text, out number);
 		
 		if(sucsess){
-			textDisplay.text = (transportPriceSelector.value == 0)? ((1.58781 * number) + 32.4405).ToString("F2") : ((1.58781 * number) + 47.4405).ToString("F2");
+			textDisplay.text = (1.11732 * number + 0.558659 + transportSlider.value).ToString("F2");
 		}
 		
-		if( string.IsNullOrEmpty(inputField.text)){
+		//Source : https://www.wolframalpha.com/input?i2d=true&i=x-0.2-%5C%2840%29x*Divide%5B4%2C100%5D%2B0.3%5C%2841%29-%5C%2840%29x*Divide%5B65%2C1000%5D%5C%2841%29%3Dk
+		
+		if(string.IsNullOrEmpty(inputField.text)){
 			textDisplay.text = "NaN";
 		}
+	}
+	
+	public void onChange(){
+		transportSliderText.text = "Transport : " + transportSlider.value + " €";
 	}
 }
