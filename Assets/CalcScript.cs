@@ -6,6 +6,7 @@ public class CalcScript : MonoBehaviour{
 	[SerializeField] Text textDisplay;
 	[SerializeField] Slider transportSlider;
 	[SerializeField] Text transportSliderText;
+	[SerializeField] AudioSource hover;
 	
 	int number;
 	
@@ -25,5 +26,8 @@ public class CalcScript : MonoBehaviour{
 	
 	public void onChange(){
 		transportSliderText.text = "Transport : " + transportSlider.value + " €";
+		if(!hover.isPlaying){
+			hover.Play();
+		}
 	}
 }
