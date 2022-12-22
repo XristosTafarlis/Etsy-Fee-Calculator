@@ -18,8 +18,12 @@ public class CalcScript : MonoBehaviour{
 		if(sucsess){
 			if(freeShippingToggle.isOn)
 				textDisplay.text = (1.47016 * (number + transportSlider.value) + 0.558659).ToString("F2");
-			else
-				textDisplay.text = (1.47016 * number + 0.558659 + transportSlider.value).ToString("F2");
+			else{
+				if(transportSlider.value != 0 )
+					textDisplay.text = (1.47016 * number + 0.558659).ToString("F2") + (" + ") + transportSlider.value;
+				else
+					textDisplay.text = (1.47016 * number + 0.558659).ToString("F2");
+			}
 		}
 		
 		//Source : https://www.wolframalpha.com/input?i2d=true&i=x-0.2-%5C%2840%29x*Divide%5B4%2C100%5D%2B0.3%5C%2841%29-%5C%2840%29x*Divide%5B65%2C1000%5D%5C%2841%29-Divide%5B24%2C100%5D*+%5C%2840%29x-0.2-%5C%2840%29x*Divide%5B4%2C100%5D%2B0.3%5C%2841%29-%5C%2840%29x*Divide%5B65%2C1000%5D%5C%2841%29%5C%2841%29%3Dk
